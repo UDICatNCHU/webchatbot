@@ -21,7 +21,7 @@ async def chatbot(request: Request, message: dict):
     if message_text.lower() == "hello":
         response_text = "Hi there!"
     else:
-        response_text = "I didn't understand. Can you please rephrase your question?"
+        response_text = "阿鬼，請說中文好嗎？"
 
     # Return the chatbot response as a JSON object
     return {"response": response_text}
