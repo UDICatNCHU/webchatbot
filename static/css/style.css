@@ -1,17 +1,65 @@
 body {
-    background-color: #f1f1f1;
+    background-color: #1f1b1b;
+    color: rgb(240, 232, 232);
 }
 
+
+
 h1 {
-    color: #333;
+    color: rgb(245, 238, 238);
     font-size: 36px;
-    text-align: center;
+    text-align: left;
 }
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20 auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #fff;
+    border: 3px solid #ccc;
+    background-color: rgb(53, 54, 53);
+    align-items: center; 
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: left; 
+    /* flex-direction: column; */
+    margin-top: 20px;
+  }
+  
+  .center2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .response {
+    background-color: #090808;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .inputmsg {
+    background-color: #030202;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  #chat p:nth-child(odd) {
+    text-align: right;
+  }
+  
+
+  #chat p:nth-child(even) {
+    text-align: left;
+    background-color: #141212;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

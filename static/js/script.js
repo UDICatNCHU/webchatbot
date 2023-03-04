@@ -11,7 +11,7 @@ form.addEventListener("submit", async (event) => {
   const response = await fetch("/chatbot/", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ text: message })
+    body: JSON.stringify({ message: message })
   });
 
   const data = await response.json();
@@ -19,9 +19,12 @@ form.addEventListener("submit", async (event) => {
 
   const messageElement = document.createElement("p");
   messageElement.innerText = `You: ${message}`;
+  messageElement.classList.add("inputmsg");
   chat.appendChild(messageElement);
 
   const responseElement = document.createElement("p");
   responseElement.innerText = `Chatbot: ${responseText}`;
+  responseElement.classList.add("response");
   chat.appendChild(responseElement);
+  
 });
